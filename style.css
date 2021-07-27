@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap');
 </style>
 
-
+html,body {
+    margin: 0;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -338,6 +340,7 @@ a{
 
 #contact .contact-items{
     width: 400px;
+    padding-left: 43px;
     
 }
 #contact .contact-item{
@@ -351,7 +354,12 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 0px 18px rgb(187, 187, 187);
+    box-shadow: 0px 0px 30px rgb(82, 78, 78);
+    transition: .3s ease box-shadow;
+}
+
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 rgb(141, 130, 130);
 }
 
 .contact > div > h1{
@@ -378,6 +386,47 @@ a{
 
 
 /*contact*/
+
+/*footer*/
+#footer {
+    background: linear-gradient(60deg, #2b1f3f, #4a3c85, #446cc9);
+}
+
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h2{
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#footer .social-icon{
+    display: flex;
+}
+
+.brand{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+#footer p{
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+
+
+/*footer*/
 
 /*animation*/
 @keyframes text_animation{
