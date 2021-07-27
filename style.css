@@ -49,11 +49,14 @@ a{
     z-index: -1;
 }
 
-#hero .hero{
+#hero > .hero{
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
     justify-content: flex-start;
+}
+.padding-hero{
+    padding: 100px;
 }
 
 #hero h1{
