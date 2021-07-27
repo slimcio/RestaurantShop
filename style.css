@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap');
+</style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*HERO*/
+#hero{
+    background-image: url("./img/pexels-valeria-boltneva-1639557.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
+
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_show .5s ease forwards;
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(1){
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(2){
+    animation-delay: 2.5s;
+}
+
+#hero h1:nth-child(1) span{
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay: 2s;
+}
+
+
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: #20a39e;
+    background: transparent;
+    border: 2px solid #20a39e;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    transition: .3s ease;
+    transition-property: background-color, color ;
+}
+
+#hero .cta:hover{
+    color: white;
+    background: #20a39e;
+}
+
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #20a39e;
+    animation: text_animation 1s ease;
+    animation-delay: 1s;
+}
+/*HERO*/
+
+/*MENU*/
+
+
+
+#menu .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#menu .menu1{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#menu .menu-top p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;;
+    letter-spacing: .05rem;
+}
+
+#menu .menu-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#menu .menu-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url("./img/sss.jpeg");
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#menu .menu-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+    z-index: -1;
+}
+
+#menu .menu-item h2{
+    color: rgb(241, 231, 231);
+    font-size: 2rem;
+}
+
+#menu .menu-item p{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+/*MENU*/
+
+
+/*offerts*/
+
+.offert{
+    position: absolute;
+    top: 1px;
+}
+
+
+.offert h1{
+    font-size: 4rem;
+    margin-bottom: 40px;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    
+ 
+}
+
+
+#offerts .container{
+    padding-top: 300px;
+    position: relative;
+    flex-wrap: wrap;
+    
+    
+}
+
+.pizza{
+    background-image: url("./img/pizza.jpeg");
+    
+}
+
+.hamburger{
+    background-image: url("./img/hamburger.jpeg");
+}
+
+.pancakes{
+    background-image: url("./img/pancakes.jpeg");
+    
+}
+
+.text{
+    margin-bottom: 60px;
+    color: rgb(51, 42, 35);
+}
+
+.offert-item{
+    
+    height: 700px;
+    width: 600px;
+    margin: 1rem 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    color: blanchedalmond;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+  
+    
+}
+
+
+/*offerts*/
+
+
+
+/*animation*/
+@keyframes text_animation{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_show{
+    100%{
+        color: white;
+    }
+}
+/*animation*/
