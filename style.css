@@ -222,6 +222,7 @@ a{
     flex-wrap: wrap;
     
     
+    
 }
 
 .pizza{
@@ -285,3 +286,18 @@ a{
     }
 }
 /*animation*/
+
+
+
+/* MOBILE */
+
+
+@media screen and (max-width: 500px) {
+    .offert-item{
+        font-size: 2rem;
+
+    }
+}
+
+
+/* MOBILE */
