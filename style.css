@@ -4,10 +4,12 @@
 body {
     margin: 0;
     padding: 0;
+    
   }
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 html{
@@ -24,6 +26,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     
 }
 
@@ -35,6 +38,7 @@ a{
     background-position: top center;
     position: relative;
     z-index: 1;
+    
     
 }
 
@@ -56,15 +60,17 @@ a{
     max-width: 1200px;
     margin: 0 auto;
     justify-content: flex-start;
+    
 }
 .padding-hero{
     padding: 10vw;
+    
 }
 
 #hero h1{
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 3rem;
     position: relative;
     color: transparent;
     animation: text_show .5s ease forwards;
@@ -233,6 +239,7 @@ a{
 
 .hamburger{
     background-image: url("./img/hamburger.jpeg");
+    
 }
 
 .pancakes{
@@ -243,6 +250,10 @@ a{
 .text{
     margin-bottom: 60px;
     color: rgb(51, 42, 35);
+}
+
+.offerts{
+    
 }
 
 .offert-item{
@@ -260,8 +271,14 @@ a{
     color: blanchedalmond;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
+
+    transition: transform .2s ease;
   
     
+}
+
+.offert-item:hover{
+    transform: scale(1.03);
 }
 
 
@@ -332,14 +349,21 @@ a{
 
 /*contact*/
 
+
+
 #contact .contact {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 #contact .contact-items{
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 #contact .contact-item{
