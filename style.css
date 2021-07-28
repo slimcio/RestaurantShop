@@ -104,6 +104,7 @@ a{
     margin-top: 20px;
     transition: .3s ease;
     transition-property: background-color, color ;
+    
 }
 .cta:hover{
     color: white;
@@ -148,6 +149,8 @@ a{
     margin-top: 5px;
     line-height: 2.5rem;;
     letter-spacing: .05rem;
+    padding: 70px;
+    background: #86c7dd;
 }
 
 #menu .menu-bottom{
@@ -172,6 +175,7 @@ a{
     position: relative;
     z-index: 1;
     overflow: hidden;
+    margin: 30px;
 }
 
 #menu .menu-item::after{
@@ -224,7 +228,7 @@ a{
 
 
 #offerts .container{
-    padding-top: 300px;
+    padding-top: 150px;
     position: relative;
     flex-wrap: wrap;
     
@@ -247,13 +251,17 @@ a{
     
 }
 
+.pancakes h1{
+    margin-bottom: 60%;
+}
+
 .text{
     margin-bottom: 60px;
     color: rgb(51, 42, 35);
 }
 
-.offerts{
-    
+.offert h1{
+    padding: 25px;    
 }
 
 .offert-item{
@@ -294,20 +302,30 @@ a{
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 50px 0;
+    
+    
 }
 
 #about .col-left{
     width: 250px;
     height: 360px;
-
+    overflow: hidden;
+    
 }
+
 .about-us-img
 {
-    margin-top: 50px;
+    margin-top: 70px;
     width: 250px;
     height: 360px;
-    box-shadow: rgb(38, 68, 88) -12px 12px 35px;
+    transition: transform .2s;
+    
+    
+}
+
+.about-us-img:hover{
+    transform: scale(1.06);
 }
 
 #about .col-right h1{
@@ -320,16 +338,18 @@ a{
 }
 #about .col-right span{
     font-size: 4rem;
-    color: rgb(43, 88, 105);
+    color: #2c748b;
 
 
 }
 #about .col-right p{
     letter-spacing: 0.05rem;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: lighter;
     color: rgb(34, 34, 37);
     margin-bottom: 40px;
+    padding: 70px;
+    background: #86c7dd;
 }
 
 
@@ -339,7 +359,10 @@ a{
     color: rgb(43, 88, 105);
     text-transform: uppercase;
     letter-spacing: 0.4rem;
+    padding-bottom: 10px;
 }
+
+
 
 
 
@@ -372,7 +395,7 @@ a{
     text-align: center;
     border-radius: 10px;
     padding: 30px;
-    margin: 30px;
+    margin: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,12 +430,16 @@ a{
     
 }
 
+#contact{
+    margin-top: -40px;
+}
+
 
 /*contact*/
 
 /*footer*/
 #footer {
-    background: linear-gradient(60deg, #2b1f3f, #4a3c85, #446cc9);
+    background: linear-gradient(60deg, #4ba1e7, #6db7f3, #7cbcf0);
 }
 
 #footer .footer{
@@ -445,6 +472,7 @@ a{
     font-weight: 600;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
+    color: blanchedalmond;
 }
 
 
@@ -479,6 +507,44 @@ a{
     .offert-item{
         font-size: 2rem;
 
+    }
+    
+
+    .offert h1{
+        font-size: 2.5rem;   
+         
+         
+          
+    }
+    #menu .section-title{
+        font-size: 3rem;
+        
+    }
+    #contact .contact-item h2{
+        
+        font-size: 1.3rem;
+        
+    }
+    #contact .contact-items{
+        width: 90vw;
+    }
+    #footer h2{
+        font-size: 1.3rem;
+    }
+    .brand{
+        font-size: 1.8rem;
+    }
+    #footer p{
+        font-size: 0.7rem;
+    }
+    #about .cta{
+        font-size: 1.5rem;
+    }
+    #footer .footer{
+        min-height: 100px;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 30px;
     }
 }
 
