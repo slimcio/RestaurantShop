@@ -333,15 +333,11 @@ a{
     font-size: 5rem;
     letter-spacing: 0.2rem;
     font-weight: lighter;
-
-
-}
-#about .col-right span{
-    font-size: 4rem;
-    color: #2c748b;
-
+    padding-bottom: 10px;
 
 }
+
+
 #about .col-right p{
     letter-spacing: 0.05rem;
     font-size: 1.5rem;
@@ -360,6 +356,7 @@ a{
     text-transform: uppercase;
     letter-spacing: 0.4rem;
     padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 
@@ -400,12 +397,12 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 0px 30px rgb(82, 78, 78);
+    box-shadow: 0px 0px 15px rgb(185, 178, 178);
     transition: .3s ease box-shadow;
 }
 
 #contact .contact-item:hover{
-    box-shadow: 0px 0px 5px 0 rgb(141, 130, 130);
+    box-shadow: 0px 0px 3px 0 rgb(190, 181, 181);
 }
 
 .contact > div > h1{
