@@ -29,7 +29,123 @@ a{
     overflow: hidden;
     
 }
+/*header*/
+#header .brand h1{
+    color: white;
+    padding-right: 20px;
+}
+#header{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+#header .header{
+    min-height: 8vh;
+    background-color: rgba(27, 26, 26, 0.123);
+    transition: .3s ease background-color;
+}
+#header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+#header .nav-list ul{
+    list-style: none;
+    position: absolute;
+    background-color: rgb(22, 37, 70);
+    width: 100vw;
+    height: 100vh;
+    left: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow-x: hidden;
+    flex-direction: column;
+    transition: .3s ease left;
+}
+#header .nav-list ul.active{
+    left: 0;
+}
+#header .nav-list ul a{
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    display: block;
+    transition: .4s ease color;
+}
+#header .hamburger{
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(0.9);
+    margin-right: 20px;
+}
 
+#header .nav-list ul li:hover a{
+    color: rgb(77, 190, 190);
+}
+#header .hamburger:after {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 3px solid white;
+	animation: hamburger_puls 1s ease infinite;
+}
+#header .hamburger .bar{
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+}
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: .3s ease;
+    transition-property: top, bottom;
+}
+#header .hamburger .bar::after {
+    top: 8px;
+}
+#header .hamburger .bar::before {
+    bottom: 8px;
+
+}
+#header .hamburger.active .bar::before{
+    bottom: 0;
+}
+#header .hamburger.active .bar::after{
+    top: 0;
+}
+/*header*/
 
 /*HERO*/
 #hero{
@@ -151,7 +267,7 @@ a{
     line-height: 2.5rem;;
     letter-spacing: .05rem;
     padding: 70px;
-    background: #86c7dd;
+    background: #6eb2ff;
 }
 
 #menu .menu-bottom{
@@ -267,7 +383,7 @@ a{
 
 .offert-item{
     
-    height: 700px;
+    height: 1000px;
     width: 800px;
     margin: 1rem 1rem;
     background-repeat: no-repeat;
@@ -345,7 +461,7 @@ a{
     color: rgb(34, 34, 37);
     margin-bottom: 40px;
     padding: 70px;
-    background: #86c7dd;
+    background: #6eb2ff;
 }
 
 
@@ -397,7 +513,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 0px 15px rgb(185, 178, 178);
+    box-shadow: 0px 0px 15px rgb(194, 187, 187);
     transition: .3s ease box-shadow;
 }
 
@@ -477,6 +593,16 @@ a{
 /*footer*/
 
 /*animation*/
+@keyframes hamburger_puls {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.5);
+	}
+}
 @keyframes text_animation{
     50%{
         width: 100%;
@@ -543,13 +669,36 @@ a{
         padding-top: 50px;
         padding-bottom: 30px;
     }
+    #header .hamburger{
+        transform: scale(0.6);
+    }
 }
 
 
 /* MOBILE */
 
 /* DESKTOP */
-@media only screen and (min-width:1000px){
+@media only screen and (min-width:1200px){
+    
+    #header .hamburger{
+        display: none;
+    }
+    #header .nav-list ul{
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+        font-size: 1rem;
+    }
+    
+    #header .nav-list ul li{
+        display: inline-block;
+        padding: 20px;
+    }
+    
+    
+    
     .cta{
         font-size: 4rem;
     }
@@ -561,8 +710,9 @@ a{
         
     }
     #menu .menu-top p{
-        font-size: 4rem;
-        line-height: 7rem;
+        font-size: 2.5rem;
+        padding: 50px 300px;
+        line-height: 4rem;
         letter-spacing: 0.09rem;
         
        
@@ -589,8 +739,8 @@ a{
     #about .col-right p{
         padding-left: 200px;
         padding-right: 200px;
-        font-size: 4rem;
-        
+        font-size: 3rem;
+   
     }
     #about .col-right h1{
         font-size: 8rem;
@@ -652,6 +802,19 @@ a{
     }
     #about .cta{
         font-size: 3rem;
+        
+    }
+    .sus2{
+        width: 200px;
+    }
+
+    .sus{
+        width: 80px;
+    }
+    #header .nav-list ul a{
+        
+        
+        
     }
    
     
