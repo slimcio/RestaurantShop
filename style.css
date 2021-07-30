@@ -103,7 +103,7 @@ a{
 }
 
 #header .nav-list ul li:hover a{
-    color: rgb(77, 190, 190);
+    color: rgb(255, 164, 89);
 }
 #header .hamburger:after {
 	position: absolute;
@@ -339,7 +339,7 @@ a{
     margin-bottom: 40px;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
-    
+    margin-top: 50px;
  
 }
 
@@ -417,7 +417,6 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 auto;
     padding: 50px 0;
     
     
@@ -445,12 +444,12 @@ a{
 }
 
 #about .col-right h1{
-    color: rgb(31, 31, 34);
-    font-size: 5rem;
+    color: rgb(31, 56, 73);
+    font-size: 4rem;
     letter-spacing: 0.2rem;
-    font-weight: lighter;
+    font-weight: bold;
     padding-bottom: 10px;
-
+    text-transform: uppercase;
 }
 
 
@@ -462,6 +461,7 @@ a{
     margin-bottom: 40px;
     padding: 70px;
     background: #6eb2ff;
+    
 }
 
 
@@ -737,11 +737,10 @@ a{
         font-size: 6rem;
     }
     #about .col-right p{
-        padding-left: 200px;
-        padding-right: 200px;
         font-size: 3rem;
-   
+        margin: 0px 5vw;
     }
+    
     #about .col-right h1{
         font-size: 8rem;
     }
@@ -805,7 +804,7 @@ a{
         
     }
     .sus2{
-        width: 200px;
+        width: 170px;
     }
 
     .sus{
@@ -816,7 +815,8 @@ a{
         
         
     }
-   
+    #menu .menu-top p{
+        margin: 0px 5vw;
     
     
 }
