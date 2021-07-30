@@ -673,12 +673,10 @@ a{
         transform: scale(0.6);
     }
 }
-
-
 /* MOBILE */
 
 /* DESKTOP */
-@media only screen and (min-width:1200px){
+@media only screen and (min-width:1230px){
     
     #header .hamburger{
         display: none;
@@ -806,20 +804,13 @@ a{
     .sus2{
         width: 170px;
     }
-
     .sus{
         width: 80px;
     }
     #header .nav-list ul a{
-        
-        
-        
     }
     #menu .menu-top p{
         margin: 0px 5vw;
-    
-    
 }
-
 
 /* DESKTOP */
